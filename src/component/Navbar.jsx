@@ -15,7 +15,21 @@ const Navbar = ({ cartCount }) => {
       <Link to="/AddProduct" className="bg-gray-800 text-white border-none cursor-pointer  p-2">
         Add Product
       </Link>
+      <Link to="/Notification" className="bg-gray-800 text-white border-none cursor-pointer p-2">
+        Notification
+      </Link>
+      <Link to="/Mycomponent" className="bg-gray-800 text-white border-none cursor-pointer p-2">
+        Mycomponent
+      </Link>
+      <input
+      className="placeholder:text-red-500 text-sm  text-black"
+      placeholder="Search products..."
+      type="text"
+      name="search"
+      />
+     
     </nav>
+    
   );
 };
 

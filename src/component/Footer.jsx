@@ -1,6 +1,8 @@
-const Footer = () => (
+const Footer = ({MyShop}) => (
   <footer className="bg-black text-white p-6 flex justify-center items-center">
-    <p>© 2025 MyShop</p>
+    <span>{MyShop}</span>
+    <span>{MyShop}</span>
+
   </footer>
 );
 

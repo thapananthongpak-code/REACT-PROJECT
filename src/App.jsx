@@ -5,6 +5,8 @@ import Account from "./page/Account";
 import AddProduct from "./page/AddProduct";
 import Cart from "./page/Cart";
 import Home from "./page/Home";
+import Notification from "./page/Notification";
+import Mycomponent from './component/Mycomponent';
 
 const App = () => {
   const [cartCount, setCartCount] = useState(0);
@@ -20,6 +22,8 @@ const App = () => {
           <Route path="/Account" element={<Account />} />
           <Route path="/AddProduct" element={<AddProduct />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/Notification" element={<Notification />} />
+          <Route path="/Mycomponent" element={<Mycomponent />} />
         </Routes>
       </BrowserRouter>
     </div>

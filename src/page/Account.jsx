@@ -19,8 +19,6 @@ const Account = () => (
         <p className="text-xs text-gray-400 mb-3 font-medium">ข้อมูลผู้ใช้</p>
           <p className="text-xs text-gray-400 mb-3 font-medium">ชื่อ</p>
             <p className="text-xs text-gray-400 mb-3 font-medium">ที่อยู่</p>
-            <p className="text-xs text-gray-400 mb-3 font-medium">ที่อยู่</p>
-            <p className="text-xs text-gray-400 mb-3 font-medium">ที่อยู่</p>
       </div>
 
    
@@ -35,3 +33,5 @@ const Account = () => (
 );
 
 export default Account;
+
+

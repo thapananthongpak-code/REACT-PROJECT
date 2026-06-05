@@ -1,6 +1,7 @@
 import Banner from '../component/Banner';
 import ProductCard from '../component/ProductCard';
 import Footer from '../component/Footer';
+import Functional from '../component/Functional';
 
 const products = [
   {
@@ -53,10 +54,22 @@ const products = [
   },
 ];
 
+
+// const Not = [
+//   {
+//     img:'https://d2cva83hdk3bwc.cloudfront.net/BY9612-adidas-yeezy-boost-350-v2-core-black-red-1.jpg',
+//     name:'Lorem ipsum dolor sit',
+//     brand:'Lorem Ipsum',
+//   },
+// ];
+
+
+
+
 const Home = ({ addToCart }) => {
   return (
     <div className="flex flex-col flex-1">
-      <Banner />
+      <Banner  src={"https://media.gq.com/photos/60d21930430ae505071c3806/16:9/w_2560%2Cc_limit/SNEAKER_GUIDE_OPENER.jpg"} alt={"img"}/>
       <div className="p-8 flex-1">
         <h2 className="text-xl font-semibold text-[#1a1a2e] mb-5">สินค้าแนะนำ</h2>
         <div className="grid grid-cols-4 gap-4">
@@ -65,9 +78,12 @@ const Home = ({ addToCart }) => {
           ))}
         </div>
       </div>
-      <Footer />
+      <Footer MyShop = {"2026 MyShop"} />
     </div>
   );
 };
+
+
+
 
 export default Home;

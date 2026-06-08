@@ -7,7 +7,7 @@ const Navbar = ({ cartCount }) => {
         Home
       </Link>
       <Link to="/Cart" className="bg-gray-800 text-white border-none cursor-pointer  p-2">
-        Cart {cartCount > 0 && <span className="bg-red-500 text-white p-1 text-xs">{cartCount}</span>}
+        Cart
       </Link>
       <Link to="/Account" className="bg-gray-800 text-white border-none cursor-pointer p-2">
         Account
@@ -27,6 +27,9 @@ const Navbar = ({ cartCount }) => {
       type="text"
       name="search"
       />
+      <Link to="/My" className="bg-gray-800 text-white border-none cursor-pointer p-2">
+        My
+      </Link>
      
     </nav>
     

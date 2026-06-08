@@ -1,5 +1,4 @@
 
-
 const AddProduct = () => (
   <div className="bg-white flex flex-col">
     <div className="flex-1 ">

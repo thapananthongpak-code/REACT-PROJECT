@@ -1,29 +1,35 @@
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Account from "./page/Account";
 import AddProduct from "./page/AddProduct";
 import Cart from "./page/Cart";
 import Home from "./page/Home";
 import Notification from "./page/Notification";
-import Mycomponent from './component/Mycomponent';
+import Mycomponent from "./component/Mycomponent";
+import  My from "./page/My";
+
+
 
 const App = () => {
-  const [cartCount, setCartCount] = useState(0);
+  // const [cartCount, setCartCount] = useState(0);
 
-  const addToCart = () => setCartCount((num) => num + 1);
+  // const addToCart = () => setCartCount((num) => num + 1);
 
   return (
     <div className="flex flex-col min-h-screen">
       <BrowserRouter>
-        <Navbar cartCount={cartCount} />
+        <Navbar />
+        {/* cartCount={cartCount}  */}
         <Routes>
-          <Route path="/" element={<Home addToCart={addToCart} />} />
+          <Route path="/" element={<Home />} />
+          {/* addToCart={addToCart} */}
           <Route path="/Account" element={<Account />} />
           <Route path="/AddProduct" element={<AddProduct />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Notification" element={<Notification />} />
           <Route path="/Mycomponent" element={<Mycomponent />} />
+          <Route path="/My" element={<My/>} />
         </Routes>
       </BrowserRouter>
     </div>

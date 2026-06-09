@@ -3,8 +3,10 @@ import React, { useState } from "react";
 const Btn = ({ num, setNum }) => {
   const [number, setNumber] = useState(0);
   return (
-    <div className="flex flex-col border border-gray-50 ">
+    <div className="flex flex-col border border-black-500 m-2 p-2">
         <span>NumChild : {number}</span>
+        <span>NumParent : {num}</span>
+
       <div className="flex gap-2">
         <button
           className="bg-red-400 text-white"

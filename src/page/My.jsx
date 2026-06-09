@@ -6,9 +6,12 @@ const My = () => {
   const [num, setNum] = useState(0);
 
   return (
-    <div>
+    <div className="m-4 p-4 ">
       <span>NumParent : {num}</span>
       <Btn num={num} setNum={setNum} />
+      <Btn num={num} setNum={setNum} />
+      <Btn num={num} setNum={setNum} />
+
     </div>
   );
 };

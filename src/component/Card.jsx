@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const Card = ({getCount, setCount, name, price, img, alt, width, height, check, setCheck}) => {
     return(

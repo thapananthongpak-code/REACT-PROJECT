@@ -7,20 +7,21 @@ import Cart from "./page/Cart";
 import Home from "./page/Home";
 import Notification from "./page/Notification";
 import Mycomponent from "./component/Mycomponent";
-import  My from "./page/My";
+import  My  from "./page/My";
 
 
 
 const App = () => {
-  // const [cartCount, setCartCount] = useState(0);
+  
 
+  
   // const addToCart = () => setCartCount((num) => num + 1);
+
 
   return (
     <div className="flex flex-col min-h-screen">
       <BrowserRouter>
         <Navbar />
-        {/* cartCount={cartCount}  */}
         <Routes>
           <Route path="/" element={<Home />} />
           {/* addToCart={addToCart} */}
@@ -37,3 +38,4 @@ const App = () => {
 };
 
 export default App;
+// rafc

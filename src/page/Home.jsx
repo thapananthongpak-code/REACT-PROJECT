@@ -1,7 +1,8 @@
 import Banner from '../component/Banner';
 import ProductCard from '../component/ProductCard';
 import Footer from '../component/Footer';
-import Functional from '../component/Functional';
+// import Functional from '../component/Functional';
+// import Btnchild from '../component/Btnchild';
 
 const products = [
   {
@@ -72,12 +73,14 @@ const Home = ({ addToCart }) => {
       <Banner  src={"https://media.gq.com/photos/60d21930430ae505071c3806/16:9/w_2560%2Cc_limit/SNEAKER_GUIDE_OPENER.jpg"} alt={"img"}/>
       <div className="p-8 flex-1">
         <h2 className="text-xl font-semibold text-[#1a1a2e] mb-5">สินค้าแนะนำ</h2>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grsid-cols-4 gap-4">
           {products.map((p) => (
             <ProductCard key={p.name} name={p.name} brand={p.brand} price={p.price} image={p.image} onAddToCart={addToCart} />
           ))}
         </div>
       </div>
+  
+
       <Footer MyShop = {"2026 MyShop"} />
     </div>
   );
